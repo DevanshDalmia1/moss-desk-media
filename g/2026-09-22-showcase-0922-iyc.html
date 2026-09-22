@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to read the Treasury curve in Moss&#x27;s Yield curve view (IYC) — Moss Terminal</title><style>
+:root{color-scheme:dark}body{margin:0;background:#151515;color:#e6e2d8;font:16px/1.55 -apple-system,system-ui,
+Helvetica,Arial,sans-serif}main{max-width:760px;margin:0 auto;padding:32px 20px 64px}h1{font-size:28px;line-height:1.2;
+margin:8px 0 4px;color:#f0b232}h2{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#9a958b;
+margin:36px 0 10px}p,li{color:#e6e2d8}.lead{font-size:18px;color:#cfcac0}.meta{color:#9a958b;font-size:13px}
+.frames{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:10px}
+.frames figure{margin:0}.frames img{width:100%;border-radius:12px;display:block;background:#0a0b0c}
+figcaption{font-size:13px;color:#9a958b;margin-top:6px}video{width:100%;max-width:360px;border-radius:14px;
+display:block;background:#000}ol,ul{padding-left:22px}li{margin:6px 0}code{background:#222;padding:1px 6px;
+border-radius:4px;color:#f0b232}.cta{display:inline-block;margin-top:12px;padding:12px 18px;border-radius:10px;
+background:#f0b232;color:#151515;font-weight:600;text-decoration:none}.foot{margin-top:48px;font-size:12px;
+color:#7d786f;border-top:1px solid #2a2a2a;padding-top:16px}
+</style></head><body><main>
+<p class="meta">Moss Terminal · iPhone beta 2.0 (4) · Yield curve</p>
+<h1>How to read the Treasury curve in Moss&#x27;s Yield curve view (IYC)</h1>
+<p class="lead">Moss&#x27;s Yield curve view (IYC) shows the US Treasury par curve on an iPhone: 11 tenors from 1M to 30Y with rate, one-day change and the date each figure is as of, plus three computed spreads. Use it to see where on the curve a move sits, then continue to Rates (GGR) and Markets (MKT).</p>
+<h2>What it answers</h2><p>the treasury curve, its vintages and spreads</p>
+<h2>How to open it</h2><p>Type <code>IYC</code>. The walk in the recording: <code>IYC</code> → <code>GGR</code> → <code>MKT</code>.</p>
+<h2>In action</h2><video controls muted playsinline preload="metadata" src="https://devanshdalmia1.github.io/moss-desk-media/m/3a59b70c734771ff2a3d8ee8ac415a19.mp4"></video><p class="meta">Each stop opens from a fresh launch; the data is whatever the capture time showed.</p>
+<h2>What you see</h2><div class="frames">
+<figure><img src="https://devanshdalmia1.github.io/moss-desk-media/m/793a397fa89b71e6eadb059df47fdabb.png" alt="A drawn phone on a black background beside the moss wordmark, showing the Yield curve view&#x27;s Tenors tab: 11 Treasury tenors from 1M at 3.97% to 30Y at 5.34%, all dated Sep 18, with a Derived Spreads block below reading 3m10y +87 bp, 2s10s +25 bp and 5s30s +48 bp." loading="lazy"><figcaption>Yield curve (IYC) in the Moss iPhone beta, captured 22 Sep at 11:29 AM: the Tenors tab, every row As Of Sep 18.</figcaption></figure>
+<figure><img src="https://devanshdalmia1.github.io/moss-desk-media/m/0a45e363e0fa53fed4a81ac884761b4c.png" alt="A drawn phone showing the Rates view, a table with Ticker, Level, Last Chg and 1M Bp columns: Treasury tickers from DGS3MO to DGS30 plus the 10-year real yield DFII10, above a Policy &amp; Money section where the mortgage rate&#x27;s +19 bp change is highlighted in amber." loading="lazy"><figcaption>Rates (GGR), the second stop, captured 22 Sep: Treasury Curve and Policy &amp; Money sections with level, last change and one-month change in bp.</figcaption></figure>
+<figure><img src="https://devanshdalmia1.github.io/moss-desk-media/m/46ad1f84819e19e5f7d58615581f5811.png" alt="A drawn phone showing the Markets view with stacked sections: a Today card for AZO, six equity indices from the S&amp;P 500 to the Hang Seng with daily changes, and a Rates block listing 3M, 2Y, 10Y, 30Y, 10Y TIPS and 2s10s." loading="lazy"><figcaption>Markets (MKT), the third stop, captured 22 Sep: Today, Indices and Rates sections stacked, with FX below the fold.</figcaption></figure>
+</div>
+<h2>Step by step</h2><ol><li>Open Yield curve by its route, IYC. The Tenors tab lists 11 rows, 1M to 30Y, with Rate, Chg 1D and As Of columns, and Derived Spreads (3m10y, 2s10s, 5s30s) below. Read As Of first: at our capture (11:29 AM, 22 Sep) every row read Sep 18.</li><li>Open Rates by its route, GGR. A Ticker, Level, Last Chg and 1M Bp table in two sections: Treasury Curve (3-month, 2-, 10- and 30-year, and the 10-year real yield DFII10) and Policy &amp; Money (fed funds, SOFR, IORB, prime and the 30-year mortgage rate), with a notable change highlighted in amber.</li><li>Open Markets by its route, MKT. Sections stack Today, Indices and Rates, with FX below the fold; each section header links to its full view.</li></ol>
+<h2>What it offers</h2><ul><li>11 Treasury tenors, 1M to 30Y, in one four-column table</li><li>An As Of date on every row, separate from the updated time under the title</li><li>Derived Spreads computed for you: 3m10y, 2s10s and 5s30s, each with its one-day change</li><li>Green for rises and red for falls in the change column</li><li>Tenors, Curve and Series tabs at the top of the view</li><li>Share and info buttons at the top right of every view</li></ul>
+<h2>Try it</h2><p>Moss is a free iPhone markets terminal in public beta.</p><a class="cta" href="https://testflight.apple.com/join/f7xjFGQb">Join the TestFlight beta</a>
+<p class="foot">Written by an automated pipeline (Claude for research and review, Codex for writing) with no individual human review. Informational only, not investment advice.</p></main></body></html>
